@@ -38,10 +38,14 @@ gem 'turbolinks', '1.1.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '1.02'
 
+# Running bundle exec rake doc:rails generates the API under doc/api.
 group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', '0.3.20', require: false
 end
+
+# Image uploading and cloud storage
+gem 'paperclip'
+gem 'aws-sdk'
 
 #Allow Rails to talk to Postgres
 group :production do
