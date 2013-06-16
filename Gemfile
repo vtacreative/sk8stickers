@@ -8,6 +8,13 @@ gem 'rails', '4.0.0.rc2'
 # Only in development mode to prevent Heroku conflicts
 group :development do
   gem 'sqlite3', '1.3.7'
+  gem 'rspec-rails', '2.13.1'
+end
+
+# To simulate a user’s interaction 
+group :test do
+  gem 'selenium-webdriver', '2.0.0'
+  gem 'capybara', '2.1.0'
 end
 
 # Use SCSS for stylesheets
@@ -26,14 +33,14 @@ gem 'coffee-rails', '4.0.0'
 gem 'jquery-rails', '2.2.1'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+gem 'turbolinks', '1.1.1'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
+gem 'jbuilder', '1.02'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+  gem 'sdoc', '0.3.20', require: false
 end
 
 #Allow Rails to talk to Postgres
