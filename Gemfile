@@ -36,6 +36,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+#Allow Rails to talk to Postgres
+group :production do
+  gem 'pg', '0.15.1'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
