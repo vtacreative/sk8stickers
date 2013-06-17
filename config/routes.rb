@@ -1,4 +1,8 @@
 Rails4::Application.routes.draw do
+  get "stickers/new"
+  get "stickers/show"
+  get "stickers/index"
+  get "stickers/edit"
   get "static_pages/home"
   get "static_pages/help"
   # The priority is based upon order of creation: first created -> highest priority.

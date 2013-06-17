@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130617053836) do
+ActiveRecord::Schema.define(version: 20130617055455) do
 
   create_table "stickers", force: true do |t|
     t.string   "sticker_name"
@@ -21,6 +21,10 @@ ActiveRecord::Schema.define(version: 20130617053836) do
     t.string   "artist"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
 end
