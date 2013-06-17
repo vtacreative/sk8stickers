@@ -43,6 +43,9 @@ group :doc do
   gem 'sdoc', '0.3.20', require: false
 end
 
+# For running tests
+gem "rspec", "2.13.0"
+
 # Image uploading and cloud storage
 gem 'paperclip'
 gem 'aws-sdk'
