@@ -1,9 +1,11 @@
 class AddImageToSticker < ActiveRecord::Migration
-  def self.up
-    add_attachment :stickers, :image
-  end
+  def change
+    def self.up
+      add_attachment :stickers, :image
+    end
 
-  def self.down
-    remove_attachment :stickers, :image
+    def self.down
+      remove_attachment :stickers, :image
+    end
   end
 end
