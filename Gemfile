@@ -50,6 +50,10 @@ gem "rspec", "2.13.0"
 gem 'paperclip'
 gem 'aws-sdk'
 
+# Recommended for Rails 4 apps on Heroku
+gem 'rails_log_stdout', github: 'heroku/rails_log_stdout'
+gem 'rails_12factor', group: :production
+
 #Allow Rails to talk to Postgres
 group :production do
   gem 'pg', '0.15.1'
